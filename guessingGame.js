@@ -36,20 +36,26 @@ function playersGuessSubmission(){
 
 function lowerOrHigher(){
 	// add code here
+	if(math.abs(playersGuess - winningNumber)>=30) return "too far";
+	else return "getting close";
 }
 
 // Check if the Player's Guess is the winning number 
 
 function checkGuess(){
 	// add code here
-	if(playersGuess===winningNumber) //return hint saying "you win"
-	if(playersGuess!==winningNumber) lowerOrHigher();
+	var result =""
+	if(playersGuess===winningNumber) result = "you win";
+	else result ="you miss";
+	//then create an element on html that display the result
 }
 
 // Create a provide hint button that provides additional clues to the "Player"
 
 function provideHint(){
 	// add code here
+	var hint = lowerOrHigher();
+	//then create an element on html that display the hint
 }
 
 // Allow the "Player" to Play Again
