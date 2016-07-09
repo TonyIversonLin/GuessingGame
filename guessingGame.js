@@ -25,7 +25,7 @@ function playersGuessSubmission(){
 
   	var temp = +document.getElementById("guess").value;
 	playersGuess = parseInt(temp);
-	document.getElementById('guess').value = "";
+	document.getElementById('guess').value ="";
 
 
 	checkGuess();
