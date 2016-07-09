@@ -44,7 +44,7 @@ function lowerOrHigher(){
 
 function checkGuess(){
 	// add code here
-	var result =""
+	var result ="";
 	if(playersGuess===winningNumber) result = "you win";
 	else result ="you miss";
 	//then create an element on html that display the result
