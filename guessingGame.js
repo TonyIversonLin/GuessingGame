@@ -71,7 +71,7 @@ function checkGuess(){
 			$("#end-image").remove("");
 			$("#loseImage").css("display","inline");
 		}
-		else $("#output").text("Try again!!...."+"Number of try: "+numTry);
+		else $("#output").text("Try again!!...."+"Guess History: "+guesslog);
 		var message = guessMessage();
 		$("#feedBack").text(message);
 	}
@@ -85,6 +85,8 @@ function guessMessage(){
 	if(diff > 20)  message+= "your guess is more than 20 digits away!";
 	if(diff <=20 && diff >10) message += "your guess is with in 20 digits!";
 	if(diff <=10 && diff !==0) message += "your guess is with in 10 digits away!";
+	var remaining = maxNumGuess-guesslog.length;
+	message += ("(remaining guess "+remaining+")");
 	return message;
 }
 
