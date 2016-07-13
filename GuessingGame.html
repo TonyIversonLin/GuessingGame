@@ -4,8 +4,9 @@
 		<title>The Guessing Game</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="GuessingGame.css">
-		<script src="guessingGame.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="guessingGame.js"></script>
+		
 	</head>
 
 	<body>
@@ -15,21 +16,24 @@
 		</div>
 
 		<h1 class="header2">~ Input a number from 1 - 100 ~</h1>
+		<p id ="output"></p>
+		<p id ="feedBack"></p>
+		<p id ="moreHint"></p>
 		<form class="header2">
 			<input id="guess" type="number" name="guess">
 		</form>
 
-		<div class="button-text">
-			<button type="button" id="submit" onclick="playersGuessSubmission()">Submit your guess</button>
-		</div>
-
 		<div class="button-set">
-			<input type="button" class="button" value="Try Again">
-			<input type="button" class="button" value="Reveal Answer">
+			<button type="button" id="submit" onclick="playersGuessSubmission()">Submit your guess</button>
+			<button type="button" onclick ="provideHint()">Hint</button>
+			<button type="button" onclick ="playAgain()">play Again</button>
+			
 		</div>
 
 		<div class="end-image">
-			<img src="http://www.disconex.discourseanalysis.net/images/knowledge.png" style="width:20%;height:20%">
+			<img src="http://www.disconex.discourseanalysis.net/images/knowledge.png" style="width:20%;height:20%" id="end-image">
+			<img src="http://1079mixfm.s3.amazonaws.com/wp-content/uploads/2015/04/You-do-not-need-to-win-the-lottery-to-pursue-your-dreams.jpg" id="winImage">
+			<img src="http://pre03.deviantart.net/6ba7/th/pre/f/2015/353/e/4/gamer_wallpaper_by_maxyjo-d9kn9i2.jpg" id="loseImage">
 		</div>
 
 	</body>

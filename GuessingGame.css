@@ -1,3 +1,6 @@
+body{
+	background-color: black;
+}
 .image { 
    position: relative; 
    width: 100%; /* for IE 6 */
@@ -11,15 +14,13 @@
 }
 .header2{
 	text-align: center;
+	color: white;
 }
-.button-text{
-	font-size: 500px;
-}
+
 button{
 	position: relative;
 	top: 10px;
-	margin: auto;
-	display: block;
+	margin-right: 10px;
 	font-size: 10px; 
 	width: 8%; 
 	height: 25px;
@@ -44,4 +45,39 @@ button{
 	position:relative;
 	top: 20px;
 	text-align: center;
+
+}
+#output{
+	text-align: center;
+	font-size: 17px;
+	color: red;
+	font-family: "Lucida Console", Monaco, monospace; 
+	font-weight: bold;
+}
+#feedBack{
+	text-align: center;
+	font-size: 15px;
+	color: #34EE34;
+	font-family: "Lucida Console", Monaco, monospace; 
+}
+#moreHint{
+	text-align: center;
+	font-size: 15px;
+	color: blue;
+	font-family: "Lucida Console", Monaco, monospace; 
+}
+.loser{
+	-webkit-filter: grayscale(100%); 
+	filter: grayscale(100%);
+	color: white;
+}
+#winImage{
+	width: 30%;
+	height: 30%;
+	display: none;
+}
+#loseImage{
+	width: 50%;
+	height: 50%;
+	display: none;
 }
