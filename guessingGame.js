@@ -56,7 +56,7 @@ function checkGuess(){
 
 	var numTry = guesslog.length;
 	if(playersGuess===winningNumber){
-		$("#output").text("Congratulations!! You won, hit \"play again\" if you want to play again");
+		$("#output").text("Congratulations!! You won, hit \"Reset\" if you want to play again");
 		$("#feedBack").text("");
 		$("#moreHint").text("");
 		$("#end-image").remove("");
